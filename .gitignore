@@ -1,3 +1,14 @@
+## Config Files ##
+.env
+package-lock.json
+
+## Build Files ##
+client/dist/bundle.js
+client/dist/img
+
+# NPM
+node_modules
+
 # Logs
 logs
 *.log

@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, rgb(28, 45, 63) 0%, #090A0F 100%)
+}
+
+.heading-primary {
+    color: #ffffff;
+
+    backface-visibility: hidden;    /* Fixes the shack in animations */
+}
+
+/* Title Box */
+.title-plate {
+    width: 80vw;
+    margin: 10% auto;
+}
+
+.title-shadow {
+    color: #fff;
+    font-family: Arvo;
+    font-weight: bold;
+    text-shadow:
+        -3px -3px 0 #222,
+        3px -3px 0 #222,
+        -3px 3px 0 #222,
+        3px 3px 0 #222,
+        4px 4px 0 #fff,
+        5px 5px 0 #fff,
+        6px 6px 0 #fff,
+        7px 7px 0 #fff;
+    line-height: 0.8em;
+    letter-spacing: 0.1em;
+    margin: 0;
+    text-align: center;
+}
+
+.title-box {
+    font-family: "Seaweed Script";
+    color: #fff;
+    text-align: center;
+    font-size: 4vw;
+    position: relative;
+    margin: 0;
+    animation: moveInRight 2s ease-in;
+}
+
+.title-box:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    width: 100%;
+    border-bottom: 3px solid #fff;
+}
+
+.title1 {
+    font-size: 12vw;
+    animation: moveInTop 2s ease-in-out;
+}
+
+.title2 {
+    font-size: 6vw;
+    animation: moveInBottom 2s ease-in-out;
+}
+
+/* Animation */
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translate(20vw);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
